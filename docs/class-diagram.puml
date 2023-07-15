@@ -1,0 +1,25 @@
+@startuml
+
+skinparam linetype ortho
+
+class Airport {
+  - name: String
+  - code: String
+}
+
+class Airline {
+  - name: String
+  - code: String
+}
+
+class Flight {
+  - flightNumber: String
+  - originAirport: Airport
+  - destinationAirport: Airport
+  - airline: Airline
+}
+
+Flight *--> Airport
+Flight *--> Airline
+
+@enduml
