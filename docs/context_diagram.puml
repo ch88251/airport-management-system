@@ -1,0 +1,17 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title System Context diagram for Flight Management System
+
+Person(customer, "Customer", "A customer who travels with the airlines")
+System(flight_management_system, "Flight Management System", "Allows customers to search for flights and book flights.")
+
+System_Ext(mail_system, "E-mail system", "The internal Microsoft Exchange e-mail system.")
+
+Rel(customer, flight_management_system, "Uses")
+Rel_Back(customer, mail_system, "Sends e-mails to")
+Rel_Neighbor(flight_management_system, mail_system, "Sends e-mails", "SMTP")
+
+@enduml
