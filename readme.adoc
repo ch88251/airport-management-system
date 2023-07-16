@@ -12,13 +12,15 @@ flights, make reservations, and manage bookings.
 
 == Architecture Overview
 
+=== Context Diagram
+
 image::docs/context-diagram.png[Context Diagram]
+
+=== Component Diagram 
+
+image::docs/component-diagram.png[Component Diagram]
 
 === Database ER Diagram
 
 image::docs/er-diagram.png[ER Diagram]
-
-=== Class Diagram
-
-image::docs/class-diagram.png[Class Diagram]
 
