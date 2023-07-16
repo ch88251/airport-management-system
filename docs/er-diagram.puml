@@ -16,27 +16,21 @@ entity "flights" as e01 {
   available_seats : number
 }
 
-entity "airline" as e02 {
+entity "airlines" as e02 {
   id : number <<generated>>
   --
   name : varchar(100)
   code : varchar(10)
 }
 
-entity "airport" as e03 {
+entity "airports" as e03 {
   id : number <<generated>>
   --
   name : varchar(100)
   code : varchar(10)
-  address_1 : varchar(40)
-  address_2 : varchar(40)
-  city : varchar(30)
-  state : varchar(30)
-  postal_code : varchar(10)
-  country : varchar(30)
 }
 
-entity "passenger" as e04 {
+entity "passengers" as e04 {
   id : number <<generated>>
   --
   first_name : varchar(40)
@@ -45,9 +39,18 @@ entity "passenger" as e04 {
   phone : varchar(15)
 }
 
+entity "bookings" as e05 {
+  id : number <<generated>>
+  --
+  flight_id : number
+  passenger_id : number
+  seat_number varchar(3)
+}
+
 e01 }o.up.|| e02
 e01 }o.up.|| e03
-e01 ||.right.|{ e04
+e01 ||.right.|{ e05
+e05 }|.right.|| e04
 
 @enduml
 
