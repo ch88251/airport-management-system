@@ -1,6 +1,7 @@
 @startuml
 
 skinparam linetype ortho
+skinparam nodesep 100
 
 class Airport {
   - name: String
@@ -19,7 +20,16 @@ class Flight {
   - airline: Airline
 }
 
+class Passenger {
+  - id : Long
+  - firstName : String
+  - lastName : String
+  - email : String
+  - phone : String
+}
+
 Flight *--> Airport
 Flight *--> Airline
+Flight o-right- Passenger : has
 
 @enduml
