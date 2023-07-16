@@ -28,6 +28,12 @@ entity "airport" as e03 {
   --
   name : varchar(100)
   code : varchar(10)
+  address_1 : varchar(40)
+  address_2 : varchar(40)
+  city : varchar(30)
+  state : varchar(30)
+  postal_code : varchar(10)
+  country : varchar(30)
 }
 
 e01 }o.up.|| e02
