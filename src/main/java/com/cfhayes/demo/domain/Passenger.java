@@ -12,8 +12,8 @@ import jakarta.persistence.Table;
 @AllArgsConstructor
 @ToString(callSuper = true)
 @Entity
-@Table(name = "customers")
-public class Customer extends AbstractEntity {
+@Table(name = "passengers")
+public class Passenger extends AbstractEntity {
 
     @Column(name = "first_name")
     private String firstName;
@@ -26,8 +26,5 @@ public class Customer extends AbstractEntity {
 
     @Column(name = "phone")
     private String phone;
-
-    @Column(name = "enabled", nullable = false)
-    private Boolean enabled;
 
 }

@@ -9,7 +9,6 @@ import lombok.ToString;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Column;
 
-import com.cfhayes.demo.domain.Address;
 
 @Getter @Setter
 @NoArgsConstructor
@@ -24,6 +23,4 @@ public class Airport extends AbstractEntity {
     @Column(name = "airport_code")
     private String code;
 
-    @Column(name = "address")
-    private Address address;
 }

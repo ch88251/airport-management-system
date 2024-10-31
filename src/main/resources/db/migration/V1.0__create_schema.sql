@@ -34,5 +34,6 @@ CREATE TABLE Bookings (
     id SERIAL PRIMARY KEY,
     flight_id INT REFERENCES Flights(id),
     passenger_id INT REFERENCES Passengers(id),
-    seat_number VARCHAR(10) NOT NULL
+    seat_number VARCHAR(10) NOT NULL,
+    booking_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
