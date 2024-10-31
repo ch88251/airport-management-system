@@ -11,12 +11,12 @@ public class AuditingEntityListener {
     void preCreate(AbstractEntity auditable) {
         Instant now = Instant.now();
         auditable.setDateCreated(now);
-        auditable.setDateUpdated(now);
+        auditable.setDateModified(now);
     }
 
     @PreUpdate
     void preUpdate(AbstractEntity auditable) {
         Instant now = Instant.now();
-        auditable.setDateUpdated(now);
+        auditable.setDateModified(now);
     }
 }

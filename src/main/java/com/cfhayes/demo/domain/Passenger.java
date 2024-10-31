@@ -1,7 +1,6 @@
 package com.cfhayes.demo.domain;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Id;
 import lombok.*;
 
 import jakarta.persistence.Entity;

@@ -16,10 +16,10 @@ import jakarta.persistence.Column;
 @Entity(name = "airlines")
 public class Airline extends AbstractEntity {
 
-    @Column(name = "airline_name")
+    @Column(name = "name")
     private String name;
 
-    @Column(name = "airline_code")
+    @Column(name = "code")
     private String code;
 
 }

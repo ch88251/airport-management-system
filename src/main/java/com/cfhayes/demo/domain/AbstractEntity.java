@@ -19,6 +19,6 @@ public abstract class AbstractEntity {
     @Column(name = "date_created", nullable = false)
     private Instant dateCreated;
 
-    @Column(name = "date_updated")
-    private Instant dateUpdated;
+    @Column(name = "date_modified")
+    private Instant dateModified;
 }

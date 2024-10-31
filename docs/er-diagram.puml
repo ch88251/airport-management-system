@@ -47,10 +47,23 @@ entity "bookings" as e05 {
   seat_number varchar(3)
 }
 
-e01 }o.up.|| e02
-e01 }o.up.|| e03
+entity "airports_flights" as e06 {
+  airport_id : number
+  flight_id : number
+}
+
+entity "airlines_flights" as e07 {
+  airport_id : number
+  flight_id : number
+}
+
+e03 ||.right.o{ e06
+e06 }o.right.|| e01
+e02 ||.up.o{ e07
+e07 }o.up.|| e01
 e01 ||.right.|{ e05
 e05 }|.right.|| e04
+
 
 @enduml
 

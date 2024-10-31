@@ -25,14 +25,14 @@ public class Flight extends AbstractEntity {
     @Column(name = "flight_number", nullable = false)
     private String flightNumber;
 
-    @Column(name = "airline_code", nullable = false)
-    private String airline_code;
+    @Column(name = "airline_id", nullable = false)
+    private Long airlineId;
 
-    @Column(name = "origin", nullable = false)
-    private String originCode;
+    @Column(name = "origin_airport_id", nullable = false)
+    private Long originAirportId;
 
-    @Column(name = "destination", nullable = false)
-    private String destinationCode;
+    @Column(name = "destination_airport_id", nullable = false)
+    private Long destinationAirportId;
 
     @Column(name = "departure_time")
     private Instant departureTime;
