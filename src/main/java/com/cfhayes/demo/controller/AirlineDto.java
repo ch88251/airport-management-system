@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AirlineDto {
-    
+
     private String airlineName;
     private String airlineCode;
 }

@@ -2,7 +2,7 @@ package com.cfhayes.demo.controller;
 
 import java.time.Instant;
 
-import com.cfhayes.demo.domain.enums.FlightStatus;
+import com.cfhayes.demo.domain.FlightStatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

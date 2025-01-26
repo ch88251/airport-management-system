@@ -13,7 +13,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.EnumType;
 
-import com.cfhayes.demo.domain.enums.FlightStatus;
+import com.cfhayes.demo.domain.FlightStatus;
 
 @Getter @Setter
 @NoArgsConstructor
