@@ -1,7 +1,6 @@
 @startuml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-LAYOUT_WITH_LEGEND()
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
 title Component diagram for Flight Management System
 
@@ -15,6 +14,15 @@ Container_Boundary(flight, "Flight Container") {
   Rel(flightController, flightService, "Uses")
   Rel(flightService, flightRepository, "Uses")
 }
+
+Container_Boundary(airline, "Airline Container") {
+  Component(airlineController, "Airline Controller", "Rest Controller", "Handles REST requests for airlines")
+  Component(airlineService, "Airline Service", "Service", "Implements the business logic, algorithms and rules related to airlines.")
+  Component(airlineRepository, "Airline Repository", "Repository", "Performs data storage and retrieval operations")
+  Rel(airlineController, airlineService, "Uses")
+  Rel(airlineService, airlineRepository, "Uses")
+}
+
 Container_Boundary(user, "User Container") {
   Component(userController, "User Controller", "Rest Controller", "Handles REST requests for users.")
   Component(userService, "User Service", "Service", "Implements the business logic, algorithms and rules related to users.")
@@ -24,9 +32,11 @@ Container_Boundary(user, "User Container") {
 }
 
 Rel(spa, flightController, "Uses", "JSON/HTTPS")
+Rel(spa, airlineController, "Uses", "JSON/HTTPS")
 Rel(spa, userController, "Uses", "JSON/HTTPS")
 
 Rel(flightRepository, db, "Uses", "JDBC")
+Rel(airlineRepository, db, "Uses", "JDBC")
 Rel(userRepository, db, "Uses", "JDBC")
 
 @enduml
