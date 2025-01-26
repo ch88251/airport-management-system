@@ -14,3 +14,7 @@ real-world airport management system. It allows airport staff to manage airports
 === Context Diagram
 
 image::docs/context-diagram.png[Context Diagram]
+
+=== Container Diagram
+
+image::docs/container-diagram.png[Container Diagram]
