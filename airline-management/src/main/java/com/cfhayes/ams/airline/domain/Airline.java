@@ -28,4 +28,6 @@ public class Airline {
   @Column(name = "icao_code")
   private String icaoCode;
 
+  @Column(name = "status", nullable = false)
+  private String status;
 }

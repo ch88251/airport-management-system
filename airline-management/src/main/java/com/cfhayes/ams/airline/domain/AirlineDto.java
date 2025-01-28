@@ -10,4 +10,6 @@ import lombok.NoArgsConstructor;
 public class AirlineDto {
   private Long id;
   private String name;
+  private String icaoCode;
+  private String status;
 }

@@ -1,0 +1,10 @@
+insert into airlines values (1, 'American Airlines', 'AAL', 'ACTIVE');
+insert into airlines values (2, 'Alaska Airlines', 'ASA', 'ACTIVE');
+insert into airlines values (3, 'Delta Air Lines', 'DAL', 'ACTIVE');
+insert into airlines values (4, 'United Airlines', 'UAL', 'ACTIVE');
+insert into airlines values (5, 'Southwest Airlines', 'SWA', 'ACTIVE');
+insert into airlines values (6, 'JetBlue Airways', 'JBU', 'ACTIVE');
+insert into airlines values (7, 'Frontier Airlines', 'FFT', 'ACTIVE');
+insert into airlines values (8, 'Spirit Airlines', 'NKS', 'ACTIVE');
+insert into airlines values (9, 'Hawaiian Airlines', 'HAL', 'ACTIVE');
+insert into airlines values (10, 'Allegiant Air', 'AAY', 'ACTIVE');
