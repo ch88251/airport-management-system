@@ -11,7 +11,7 @@ real-world airport management system. It allows airport staff to manage airports
 airlines, and flights.
 
 == System Overview
-The *Airport Management System comprises several key modules and services to
+The *Airport Management System* comprises several key modules and services to
 manage airport operations, including airport-related data, runway details, 
 terminal information, airline management, flight management and crew assignments. 
 The system integrates these services to provide a centralized platform for managing
