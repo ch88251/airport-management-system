@@ -19,10 +19,26 @@ complex airport functions, all built using the Quarkus framework, with a Postgre
 database backend.
 
 === Key Components
-1. Airport Management
+1. *Airport Management*
    * *Purpose*: Manages overall airport-related data such as the airport's name, 
       location, IATA code, and facilities.
-   * *Technology*: Quarkus
+   * *Technology*: Java, Quarkus, JPA, PostgreSQL
+   * *Description*: This component serves as the container for airport data and
+      oversees the management of core attributes related to the physical airport
+      infrastructure.
+2. *Airline Management*
+   * *Purpose*: Manages airlines and their fleets, including airline attributes 
+      like name, country of origin, and fleet details.
+   * *Technology*: Java, Quarkus, JPA, PostgreSQL
+   * *Description*: This component serves as the container for airline data and
+      ensures airlines and their fleets are managed efficiently within the system.
+3. *Flight Management*
+   * *Purpose*: Manages flight-related operations, including flight schedules, 
+      statuses, and assignments.
+   * *Technology*: Java, Quarkus, JPA, PostgreSQL
+   * *Description*: The flight management component oversees the scheduling of
+      flights and the tracking of their statuses, ensuring that flight information
+      is always up-to-date.
 
 === Context Diagram
 
